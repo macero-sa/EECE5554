@@ -26,7 +26,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'driver = imu_drive.driver:main'
+            'driver = imu_driver.driver:main'
         ],
     },
 )

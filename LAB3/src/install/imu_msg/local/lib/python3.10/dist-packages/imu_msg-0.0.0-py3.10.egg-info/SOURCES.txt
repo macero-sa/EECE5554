@@ -1,0 +1,8 @@
+setup.py
+imu_msg/__init__.py
+imu_msg.egg-info/PKG-INFO
+imu_msg.egg-info/SOURCES.txt
+imu_msg.egg-info/dependency_links.txt
+imu_msg.egg-info/top_level.txt
+imu_msg/msg/__init__.py
+imu_msg/msg/_imu_msg.py

@@ -1,0 +1,22 @@
+[0.460s] Invoking command in '/home/savannah/EECE5554/LAB3/src/imu_driver': CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB3/install/imu_msg:/home/savannah/EECE5554/LAB3/src/install/imu_msg LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB3/install/imu_msg/lib:/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/savannah/EECE5554/LAB3/build/imu_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB3/install/imu_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_driver build --build-base /home/savannah/EECE5554/LAB3/build/imu_driver/build install --record /home/savannah/EECE5554/LAB3/build/imu_driver/install.log --single-version-externally-managed install_data
+[0.629s] running egg_info
+[0.630s] writing ../../build/imu_driver/imu_driver.egg-info/PKG-INFO
+[0.630s] writing dependency_links to ../../build/imu_driver/imu_driver.egg-info/dependency_links.txt
+[0.630s] writing entry points to ../../build/imu_driver/imu_driver.egg-info/entry_points.txt
+[0.630s] writing requirements to ../../build/imu_driver/imu_driver.egg-info/requires.txt
+[0.630s] writing top-level names to ../../build/imu_driver/imu_driver.egg-info/top_level.txt
+[0.631s] reading manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+[0.632s] adding license file 'LICENSE'
+[0.632s] writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+[0.632s] running build
+[0.632s] running build_py
+[0.632s] running install
+[0.633s] running install_lib
+[0.633s] running install_data
+[0.634s] running install_egg_info
+[0.635s] removing '/home/savannah/EECE5554/LAB3/install/imu_driver/lib/python3.10/site-packages/imu_driver-0.0.0-py3.10.egg-info' (and everything under it)
+[0.635s] Copying ../../build/imu_driver/imu_driver.egg-info to /home/savannah/EECE5554/LAB3/install/imu_driver/lib/python3.10/site-packages/imu_driver-0.0.0-py3.10.egg-info
+[0.636s] running install_scripts
+[0.650s] Installing driver script to /home/savannah/EECE5554/LAB3/install/imu_driver/lib/imu_driver
+[0.650s] writing list of installed files to '/home/savannah/EECE5554/LAB3/build/imu_driver/install.log'
+[0.672s] Invoked command in '/home/savannah/EECE5554/LAB3/src/imu_driver' returned '0': CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB3/install/imu_msg:/home/savannah/EECE5554/LAB3/src/install/imu_msg LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB3/install/imu_msg/lib:/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/savannah/EECE5554/LAB3/build/imu_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB3/install/imu_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_driver build --build-base /home/savannah/EECE5554/LAB3/build/imu_driver/build install --record /home/savannah/EECE5554/LAB3/build/imu_driver/install.log --single-version-externally-managed install_data

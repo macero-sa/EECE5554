@@ -1,0 +1,228 @@
+[0.013s] Invoking command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake /home/savannah/EECE5554/LAB3/src/imu_msg -DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB3/src/install/imu_msg
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.146s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.224s] -- Detecting C compiler ABI info - done
+[0.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.231s] -- Detecting C compile features
+[0.231s] -- Detecting C compile features - done
+[0.231s] -- Detecting CXX compiler ABI info
+[0.311s] -- Detecting CXX compiler ABI info - done
+[0.316s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.316s] -- Detecting CXX compile features
+[0.316s] -- Detecting CXX compile features - done
+[0.316s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.454s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.534s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.561s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.566s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.574s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.582s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.594s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.613s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.636s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.913s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.339s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.506s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.507s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.529s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.529s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.529s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.529s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.552s] -- Found PythonExtra: .so  
+[1.612s] -- Configuring done
+[1.639s] -- Generating done
+[1.645s] -- Build files have been written to: /home/savannah/EECE5554/LAB3/src/build/imu_msg
+[1.653s] Invoked command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake /home/savannah/EECE5554/LAB3/src/imu_msg -DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB3/src/install/imu_msg
+[1.655s] Invoking command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake --build /home/savannah/EECE5554/LAB3/src/build/imu_msg -- -j4 -l4
+[1.690s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.699s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.708s] [  6%] Built target ament_cmake_python_copy_imu_msg
+[1.978s] running egg_info
+[1.978s] creating imu_msg.egg-info
+[1.978s] writing imu_msg.egg-info/PKG-INFO
+[1.978s] writing dependency_links to imu_msg.egg-info/dependency_links.txt
+[1.978s] writing top-level names to imu_msg.egg-info/top_level.txt
+[1.978s] writing manifest file 'imu_msg.egg-info/SOURCES.txt'
+[1.978s] reading manifest file 'imu_msg.egg-info/SOURCES.txt'
+[1.978s] writing manifest file 'imu_msg.egg-info/SOURCES.txt'
+[2.007s] [  9%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_generator_c.dir/rosidl_generator_c/imu_msg/msg/detail/imu_msg__functions.c.o[0m
+[2.014s] [  9%] Built target ament_cmake_python_build_imu_msg_egg
+[2.060s] [ 12%] [32m[1mLinking C shared library libimu_msg__rosidl_generator_c.so[0m
+[2.094s] [ 12%] Built target imu_msg__cpp
+[2.110s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.111s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.111s] [ 22%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.111s] [ 22%] Built target imu_msg__rosidl_generator_c
+[2.131s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.482s] [ 29%] [32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/imu_msg/msg/detail/dds_fastrtps/imu_msg__type_support.cpp.o[0m
+[2.526s] [ 32%] [32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/imu_msg/msg/detail/imu_msg__type_support_c.cpp.o[0m
+[2.562s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/imu_msg/msg/detail/imu_msg__type_support.cpp.o[0m
+[2.598s] [ 38%] [32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/imu_msg/msg/imu_msg__type_support.cpp.o[0m
+[2.870s] [ 41%] [32m[1mLinking CXX shared library libimu_msg__rosidl_typesupport_cpp.so[0m
+[2.891s] [ 45%] [32m[1mLinking CXX shared library libimu_msg__rosidl_typesupport_introspection_cpp.so[0m
+[2.927s] [ 45%] Built target imu_msg__rosidl_typesupport_cpp
+[2.942s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.949s] [ 51%] [32m[1mLinking CXX shared library libimu_msg__rosidl_typesupport_fastrtps_c.so[0m
+[2.987s] [ 54%] [32m[1mLinking CXX shared library libimu_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.002s] [ 54%] Built target imu_msg__rosidl_typesupport_introspection_cpp
+[3.018s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.032s] [ 58%] Built target imu_msg__rosidl_typesupport_fastrtps_c
+[3.072s] [ 58%] Built target imu_msg__rosidl_typesupport_fastrtps_cpp
+[3.190s] [ 61%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/imu_msg/msg/detail/imu_msg__type_support.c.o[0m
+[3.226s] [ 64%] [32m[1mLinking C shared library libimu_msg__rosidl_typesupport_introspection_c.so[0m
+[3.232s] [ 67%] [32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/imu_msg/msg/imu_msg__type_support.cpp.o[0m
+[3.254s] [ 67%] Built target imu_msg__rosidl_typesupport_introspection_c
+[3.261s] [ 70%] [32m[1mLinking CXX shared library libimu_msg__rosidl_typesupport_c.so[0m
+[3.297s] [ 70%] Built target imu_msg__rosidl_typesupport_c
+[3.314s] [ 70%] Built target imu_msg
+[3.332s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.559s] [ 74%] Built target imu_msg__py
+[3.578s] [ 77%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_generator_py.dir/rosidl_generator_py/imu_msg/msg/_imu_msg_s.c.o[0m
+[3.655s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/imu_msg/libimu_msg__rosidl_generator_py.so[0m
+[3.691s] [ 80%] Built target imu_msg__rosidl_generator_py
+[3.713s] [ 83%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.713s] [ 87%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.718s] [ 90%] [32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[3.804s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.808s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.816s] [100%] [32m[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.847s] [100%] Built target imu_msg__rosidl_typesupport_fastrtps_c__pyext
+[3.850s] [100%] Built target imu_msg__rosidl_typesupport_introspection_c__pyext
+[3.853s] [100%] Built target imu_msg__rosidl_typesupport_c__pyext
+[3.868s] Invoked command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake --build /home/savannah/EECE5554/LAB3/src/build/imu_msg -- -j4 -l4
+[3.879s] Invoking command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake --install /home/savannah/EECE5554/LAB3/src/build/imu_msg
+[3.884s] -- Install configuration: ""
+[3.884s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/ament_index/resource_index/rosidl_interfaces/imu_msg
+[3.884s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.884s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.884s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/imu_msg.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__functions.c
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__struct.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__functions.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_generator_c__visibility_control.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/library_path.sh
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/library_path.dsv
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_generator_c.so
+[3.885s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_generator_c.so" to ""
+[3.885s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.885s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.885s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_fastrtps_c.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.885s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_c.so
+[3.885s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/imu_msg.hpp
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__struct.hpp
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__traits.hpp
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.hpp
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__builder.hpp
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.886s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/dds_fastrtps
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.886s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.887s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_cpp.so
+[3.889s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.889s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_introspection_c.h
+[3.889s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.c
+[3.889s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.889s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_c.so
+[3.889s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_c.so" to ""
+[3.889s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_c.so
+[3.889s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_c.so" to ""
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg
+[3.889s] -- Up-to-date: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail
+[3.890s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.cpp
+[3.890s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.890s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_cpp.so
+[3.890s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[3.890s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_cpp.so
+[3.891s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_typesupport_cpp.so" to ""
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/pythonpath.sh
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/pythonpath.dsv
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/top_level.txt
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_c.c
+[3.891s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/libimu_msg__rosidl_generator_py.so
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_introspection_c.c
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg_s.c
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg.py
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/__init__.py
+[3.893s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/__init__.py
+[3.923s] Listing '/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg'...
+[3.923s] Compiling '/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/__init__.py'...
+[3.923s] Listing '/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg'...
+[3.923s] Compiling '/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/__init__.py'...
+[3.923s] Compiling '/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg.py'...
+[3.927s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.927s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.927s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.927s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.928s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_generator_py.so
+[3.928s] -- Set runtime path of "/home/savannah/EECE5554/LAB3/src/install/imu_msg/lib/libimu_msg__rosidl_generator_py.so" to ""
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/msg/ImuMsg.idl
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/msg/ImuMsg.msg
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/ament_index/resource_index/package_run_dependencies/imu_msg
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/ament_index/resource_index/parent_prefix_path/imu_msg
+[3.928s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/ament_prefix_path.sh
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/ament_prefix_path.dsv
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/path.sh
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/environment/path.dsv
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/local_setup.bash
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/local_setup.sh
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/local_setup.zsh
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/local_setup.dsv
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/package.dsv
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/ament_index/resource_index/packages/imu_msg
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cExport.cmake
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cExport-noconfig.cmake
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.929s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cppExport.cmake
+[3.930s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.930s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.930s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cExport.cmake
+[3.930s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.930s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cExport.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cExport-noconfig.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cppExport.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cppExport.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_pyExport.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_pyExport-noconfig.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/rosidl_cmake-extras.cmake
+[3.931s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_targets-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msgConfig.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/cmake/imu_msgConfig-version.cmake
+[3.932s] -- Installing: /home/savannah/EECE5554/LAB3/src/install/imu_msg/share/imu_msg/package.xml
+[3.934s] Invoked command in '/home/savannah/EECE5554/LAB3/src/build/imu_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB3/src/install/imu_driver:/home/savannah/EECE5554/LAB3/install/imu_driver:/opt/ros/humble /usr/bin/cmake --install /home/savannah/EECE5554/LAB3/src/build/imu_msg

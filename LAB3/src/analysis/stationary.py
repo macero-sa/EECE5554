@@ -11,8 +11,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import rclpy.serialization
 import rosbag2_py
-from rosidl_runtime_py.utilities import get_message
-import os
 from imu_msg.msg import ImuMsg
 import rclpy
 
@@ -25,18 +23,14 @@ def read_data(bag_path):
     available_topics = reader.get_all_topics_and_types()
 
     print(f"Available topics: {available_topics}", [topic.name for topic in available_topics])
-    
 
-    # imu_msg_type = "imu_msg/msg/ImuMsg"
-    # ImuMsg = get_message(imu_msg_type)
-
-    # Initialize data dictionary
+    # initialize data dictionary
     imu_data = {'gyro': [], 'accel': [], 'orient': [], 'mag': [], 'stamps': []}
 
-    # Read messages
+    # read messages
     while reader.has_next():
         topic, msg_data, timestamp = reader.read_next()
-        if topic == "/imu":  # Process only IMU messages
+        if topic == "/imu":  
             imu_msg = rclpy.serialization.deserialize_message(msg_data, ImuMsg)
             # extract quaternions
             qx, qy, qz, qw = imu_msg.imu.orientation.x, imu_msg.imu.orientation.y, imu_msg.imu.orientation.z, imu_msg.imu.orientation.w

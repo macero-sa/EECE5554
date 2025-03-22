@@ -10,7 +10,7 @@ setup.py
 ../../build/imu_driver/imu_driver.egg-info/top_level.txt
 ../../build/imu_driver/imu_driver.egg-info/zip-safe
 imu_driver/__init__.py
-imu_driver/driver.py
+imu_driver/imu_driver.py
 launch/imu_launch.py
 resource/imu_driver
 test/test_copyright.py

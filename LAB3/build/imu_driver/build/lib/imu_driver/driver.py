@@ -8,6 +8,23 @@ from std_msgs.msg import Header
 from imu_msg.msg import ImuMsg
 import math
 import numpy as np
+'''
+TESTING WITH SENSOR_EMULATOR
+Run sensor emulator with: 
+
+python3 serial_emulator.py --file imu_data.txt --device_type imu -V b'$VNWRG,07,40*59'
+
+Get serial port from emulator output, e.g. /dev/pts/2
+New terminal window, launch driver:
+
+ros2 launch imu_driver imu_launch.py ports:=/dev/pts/2
+
+New terminal window: 
+
+ros2 bag record -o <file_name> /imu
+
+Stop recording with ctrl+c 
+'''
 
 
 class Driver(Node):
@@ -18,6 +35,7 @@ class Driver(Node):
 
         port = self.get_parameter('port').value
         baudrate = self.get_parameter('baudrate').value
+        
         try:
             self.ser = serial.Serial(port, baudrate)
             self.get_logger().info(f'Connected to {port} at {baudrate} baud')

@@ -1,3 +1,0 @@
-[console_scripts]
-driver = imu_driver.driver:main
-

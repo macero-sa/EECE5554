@@ -12,7 +12,7 @@ def generate_launch_description():
 
     imu_node = Node(
         package='imu_driver',
-        executable='driver',
+        executable='imu_driver',
         name='imu_driver',
         parameters=[{
             'port': LaunchConfiguration('port')

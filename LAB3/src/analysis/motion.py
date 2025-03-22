@@ -5,6 +5,8 @@ import rosbag2_py
 import rclpy
 import rclpy.serialization
 from imu_msg.msg import ImuMsg
+from scipy.integrate import cumtrapz
+from scipy.signal import butter, filtfilt
 
 def read_data(bag_path):
 
@@ -48,71 +50,132 @@ def read_data(bag_path):
     imu_data['mag'] = np.array(imu_data['mag'])
         
 
-    print(f"Extracted {len(imu_data)} IMU messages")
+    print(f"Extracted {len(imu_data['stamps'])} IMU messages")
     return imu_data
 
-'''
-from video:
-linear motion in z axis t: [04.27 : 46.30]
-linear motion in x axis t: [46.48 : 1.17.94]
-lin motion in y axis t: [1.18.12 : 1.58.56]
-circle in xy ccw(?) t:[1.59.97 : 2.01.38]
-circle in yz cw(?) t:[2.03.46 : 2.04.87]
-circle in xz[2.11.94 : 2.15.47]
-pendelum in xy t: [2.34.97 : 3.02.13]
-ctrl c to end bag at t = 3.02.13
-video ends at t = 3.05.13
- '''
-def plot_3d_motion(data):
-    """Plot 3D motion trajectory colored by time."""
-    # Convert timestamps to seconds from start
-    t = (np.array(data['stamps']) - data['stamps'][0]) / 1e9
+
+# z motion ends at 1:05 in video. z motion from t = [0, 65 - 13 = 52]
+# x motion t = [53, 60 + 28 - 13 = 75]
+# y motion t = [76, 120 + 23 - 13 = 130] 
+# heel spin from 2.26 to 2.50: t = [120 + 26 - 13 = 133, 120 + 54 - 13 = 161]
+# aggressive circles about y: t = [180 -13 = 167, 177]
+
+def extract_time_window(imu_data, start_time, end_time):
+    """Extract IMU data within a specific time window."""
+    # Convert time to nanoseconds
+    timestamps = np.array(imu_data['stamps'])
+    t = (timestamps - timestamps[0]) / 1e9  # Convert to seconds from start
     
-    # Create color array
-    colors = plt.cm.viridis(t/np.max(t))
+    # Create mask for time window
+    mask = (t >= start_time) & (t <= end_time)
     
-    # Create 3D plots
-    fig = plt.figure(figsize=(15, 7))
+    # Extract data for time window
+    extracted_data = {}
+    for key, value in imu_data.items():
+        if isinstance(value, np.ndarray):
+            extracted_data[key] = value[mask]
+        else:
+            extracted_data[key] = [v for i, v in enumerate(value) if mask[i]]
+            
+    return extracted_data
+
+def plot_clips(imu_data):
+    extracted_data_z = extract_time_window(imu_data, 0, 52)
+    extracted_data_x = extract_time_window(imu_data, 53, 75)
+    extracted_data_y = extract_time_window(imu_data, 76, 130)
+    extracted_data_circle_y = extract_time_window(imu_data, 167, 177)
     
-    # Gyroscope 3D plot
-    ax1 = fig.add_subplot(121, projection='3d')
-    points1 = ax1.scatter(data['gyro'][:, 0], 
-                         data['gyro'][:, 1], 
-                         data['gyro'][:, 2],
-                         c=t, 
-                         cmap='viridis')
-    ax1.set_title('3D Gyroscope Motion')
-    ax1.set_xlabel('X (rad/s)')
-    ax1.set_ylabel('Y (rad/s)')
-    ax1.set_zlabel('Z (rad/s)')
+    # time normalization
+    t1 = (np.array(extracted_data_z['stamps']) - extracted_data_z['stamps'][0]) / 1e9 
+    t2 = (np.array(extracted_data_x['stamps']) - extracted_data_x['stamps'][0]) / 1e9
+    t3 = (np.array(extracted_data_y['stamps']) - extracted_data_y['stamps'][0]) / 1e9
+    t4 = (np.array(extracted_data_circle_y['stamps']) - extracted_data_circle_y['stamps'][0]) / 1e9
+
+    fig1 = plt.figure(figsize=(10, 8))
+    ax1 = fig1.add_subplot(111, projection='3d')
+    ax1.plot(0 * np.ones_like(extracted_data_z['accel'][:, 0]), 
+            0 * np.ones_like(extracted_data_z['accel'][:, 0]), 
+            extracted_data_z['accel'][:, 2], 
+            label='Linear Motion along Z axis', color='b', marker='o')
+    ax1.plot(extracted_data_x['accel'][:, 0], 
+            0 * np.ones_like(extracted_data_x['accel'][:, 0]), 
+            0 * np.ones_like(extracted_data_x['accel'][:, 0]), 
+            label='Linear Motion along X axis', color='g', marker='o')
+    ax1.plot(0 * np.ones_like(extracted_data_y['accel'][:, 0]), 
+            extracted_data_y['accel'][:, 1], 
+            0 * np.ones_like(extracted_data_y['accel'][:, 0]), 
+            label='Linear Motion along Y axis', color='r', marker='o')
+
+    ax1.set_xlabel('X (m/s²)')
+    ax1.set_ylabel('Y (m/s²)')
+    ax1.set_zlabel('Z (m/s²)')
+    ax1.set_title('Linear Movements')
+    ax1.legend()
+
+    fig2 = plt.figure(figsize=(10, 8))
+    ax2 = fig2.add_subplot(111, projection='3d')
+    ax2.plot(extracted_data_circle_y['accel'][:, 0], 
+            0 * np.ones_like(extracted_data_circle_y['accel'][:, 0]), 
+            extracted_data_circle_y['accel'][:, 2], 
+            label='Circle about Y axis', color='m', marker='o')
     
-    # Accelerometer 3D plot
-    ax2 = fig.add_subplot(122, projection='3d')
-    points2 = ax2.scatter(data['accel'][:, 0], 
-                         data['accel'][:, 1], 
-                         data['accel'][:, 2],
-                         c=t, 
-                         cmap='viridis')
-    ax2.set_title('3D Accelerometer Motion')
     ax2.set_xlabel('X (m/s²)')
     ax2.set_ylabel('Y (m/s²)')
     ax2.set_zlabel('Z (m/s²)')
+    ax2.set_title('Circular Motion about Y Axis')
+    ax2.legend()
+    plt.show()
+
+def plot_actual(imu_data):
+    """Plot full 3D trajectories for linear motions in separate subplots."""
+    # Extract time windows
+    extracted_data_z = extract_time_window(imu_data, 0, 52)
+    extracted_data_x = extract_time_window(imu_data, 53, 75)
+    extracted_data_y = extract_time_window(imu_data, 76, 130)
     
-    # Add colorbars
-    plt.colorbar(points1, ax=ax1, label='Time (s)')
-    plt.colorbar(points2, ax=ax2, label='Time (s)')
+    # Create figure with three subplots
+    fig = plt.figure(figsize=(18, 6))
+    
+    # Plot data for Z-axis motion
+    ax1 = fig.add_subplot(131, projection='3d')
+    ax1.scatter(extracted_data_z['accel'][:, 0],
+                extracted_data_z['accel'][:, 1],
+                extracted_data_z['accel'][:, 2],
+                label='Z-axis Motion', color='b', alpha=0.6)
+    ax1.set_title('Linear Motion along Z\nt=[0, 52]s')
+    
+    # Plot data for X-axis motion
+    ax2 = fig.add_subplot(132, projection='3d')
+    ax2.scatter(extracted_data_x['accel'][:, 0],
+                extracted_data_x['accel'][:, 1],
+                extracted_data_x['accel'][:, 2],
+                label='X-axis Motion', color='g', alpha=0.6)
+    ax2.set_title('Linear Motion along X\nt=[53, 75]s')
+    
+    # Plot data for Y-axis motion
+    ax3 = fig.add_subplot(133, projection='3d')
+    ax3.scatter(extracted_data_y['accel'][:, 0],
+                extracted_data_y['accel'][:, 1],
+                extracted_data_y['accel'][:, 2],
+                label='Y-axis Motion', color='r', alpha=0.6)
+    ax3.set_title('Linear Motion along Y\nt=[76, 130]s')
+    
+    # Set common properties for all subplots
+    for ax in [ax1, ax2, ax3]:
+        ax.set_xlabel('X (m/s²)')
+        ax.set_ylabel('Y (m/s²)')
+        ax.set_zlabel('Z (m/s²)')
+        ax.legend()
+        ax.set_box_aspect([1,1,1])
+        ax.view_init(elev=20, azim=45)
     
     plt.tight_layout()
     plt.show()
 
 if __name__ == "__main__":
-    bag_path = "/home/savannah/EECE5554/LAB3/src/data/motion_1/motion_1_0.db3"
+    bag_path = "/home/savannah/EECE5554/LAB3/src/data/motion/motion_0.db3"
     rclpy.init()
-    
-    # Read all IMU data
     imu_data = read_data(bag_path)
-    
-    # Plot 3D motion
-    plot_3d_motion(imu_data)
-    
     rclpy.shutdown()
+    plot_clips(imu_data)
+    plot_actual(imu_data)

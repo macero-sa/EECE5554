@@ -70,6 +70,7 @@ class Driver(Node):
 
             yaw, pitch, roll = map(math.radians, map(float, fields[1:4])) # math needs radians for quaternion compute
             mag_x, mag_y, mag_z = map(float, fields[4:7])
+            mag_x, mag_y, mag_z = mag_x*10000, mag_y*10000, mag_z*10000
             acc_x, acc_y, acc_z = map(float, fields[7:10])
             gyro_x, gyro_y, gyro_z = map(float, fields[10:13])
             # convert yaw pitch roll to quaternions, ref quaternion_to_euler func in ros2 tf docs

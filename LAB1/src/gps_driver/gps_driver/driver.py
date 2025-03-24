@@ -32,21 +32,22 @@ class Driver(Node):
         try:
             line = self.ser.readline().decode('utf-8')
             if line.startswith('$GPGGA'):  # Only log GPGGA messages
+
                 parsed_data = self.parse_str(line)
                 if parsed_data:
                     lat, lon, hdop, alt, header, utc_time = parsed_data
                     
-                    t, nt = utc_time.split('.')
-                    dt = datetime.strptime(t, "%H%M%S")
-                    sec = dt.hour * 3600 + dt.minute * 60 + dt.second
-                    nsec = int(float('0.' + nt) * 1e9)  # Convert decimal part to nanoseconds
+                    s, ms = utc_time.split('.')
+                    sec  = int(s[2:4]) * 60 + int(s[4:6])
+                    # use nanosecond precision for milliseconds
+                    millisec = int[ms]
 
                     zone, letter = self.zone_letter(lat, lon)
                     utm_easting, utm_northing = self.latlon_to_utm(lat, lon, zone)
                     gps_message = GpsMsg()
                     gps_message.header = Header()
                     gps_message.header.stamp.sec = sec
-                    gps_message.header.stamp.nanosec = nsec
+                    gps_message.header.stamp.nanosec = millisec
                     gps_message.header.frame_id = 'GPS1_Frame'
                     gps_message.latitude = lat
                     gps_message.longitude = lon

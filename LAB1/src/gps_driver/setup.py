@@ -28,7 +28,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'driver = gps_driver.gps_driver:main'
+            'gps_driver = gps_driver.gps_driver:main'
         ],
     },
 )

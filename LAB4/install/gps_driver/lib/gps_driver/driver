@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'gps-driver==0.0.0','console_scripts','driver'
+# EASY-INSTALL-ENTRY-SCRIPT: 'gps-driver==0.0.0','console_scripts','gps_driver'
 import re
 import sys
 

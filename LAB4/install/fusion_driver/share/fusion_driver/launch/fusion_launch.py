@@ -21,7 +21,7 @@ def generate_launch_description():
             executable='gps_driver',
             name='gps_driver',
             parameters=[{
-                'gps_port': LaunchConfiguration('gps_port')
+                'port': LaunchConfiguration('gps_port')
             }],
             output='screen'
         ),
@@ -31,7 +31,7 @@ def generate_launch_description():
             executable='imu_driver',
             name='imu_driver',
             parameters=[{
-                'imu_port': LaunchConfiguration('imu_port')
+                'port': LaunchConfiguration('imu_port')
             }],
             output='screen'
         )

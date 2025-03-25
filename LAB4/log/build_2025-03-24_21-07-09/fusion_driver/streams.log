@@ -1,0 +1,36 @@
+[0.654s] Invoking command in '/home/savannah/EECE5554/LAB4/src/fusion_driver': AMENT_PREFIX_PATH=/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB4/install/imu_msg/lib:/home/savannah/EECE5554/LAB4/install/gps_message/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/savannah/EECE5554/LAB4/build/fusion_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages:/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fusion_driver build --build-base /home/savannah/EECE5554/LAB4/build/fusion_driver/build install --record /home/savannah/EECE5554/LAB4/build/fusion_driver/install.log --single-version-externally-managed install_data
+[0.925s] running egg_info
+[0.926s] creating ../../build/fusion_driver/fusion_driver.egg-info
+[0.926s] writing ../../build/fusion_driver/fusion_driver.egg-info/PKG-INFO
+[0.927s] writing dependency_links to ../../build/fusion_driver/fusion_driver.egg-info/dependency_links.txt
+[0.927s] writing entry points to ../../build/fusion_driver/fusion_driver.egg-info/entry_points.txt
+[0.928s] writing requirements to ../../build/fusion_driver/fusion_driver.egg-info/requires.txt
+[0.928s] writing top-level names to ../../build/fusion_driver/fusion_driver.egg-info/top_level.txt
+[0.928s] writing manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'
+[0.931s] reading manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'
+[0.931s] adding license file 'LICENSE'
+[0.932s] writing manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'
+[0.932s] running build
+[0.932s] running build_py
+[0.933s] creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build
+[0.933s] creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib
+[0.933s] creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver
+[0.934s] copying fusion_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver
+[0.934s] running install
+[0.934s] running install_lib
+[0.936s] creating /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver
+[0.937s] copying /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver
+[0.938s] byte-compiling /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver/__init__.py to __init__.cpython-310.pyc
+[0.938s] running install_data
+[0.938s] creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index
+[0.938s] creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index
+[0.938s] creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index/packages
+[0.938s] copying resource/fusion_driver -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index/packages
+[0.938s] copying package.xml -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver
+[0.941s] creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver/launch
+[0.941s] copying launch/fusion_launch.py -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver/launch
+[0.941s] running install_egg_info
+[0.943s] Copying ../../build/fusion_driver/fusion_driver.egg-info to /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver-0.0.0-py3.10.egg-info
+[0.945s] running install_scripts
+[0.968s] writing list of installed files to '/home/savannah/EECE5554/LAB4/build/fusion_driver/install.log'
+[1.003s] Invoked command in '/home/savannah/EECE5554/LAB4/src/fusion_driver' returned '0': AMENT_PREFIX_PATH=/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB4/install/imu_msg/lib:/home/savannah/EECE5554/LAB4/install/gps_message/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/savannah/EECE5554/LAB4/build/fusion_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages:/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fusion_driver build --build-base /home/savannah/EECE5554/LAB4/build/fusion_driver/build install --record /home/savannah/EECE5554/LAB4/build/fusion_driver/install.log --single-version-externally-managed install_data

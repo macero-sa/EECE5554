@@ -1,3 +1,0 @@
-[console_scripts]
-driver = gps_driver.driver:main
-

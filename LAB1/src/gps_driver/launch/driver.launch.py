@@ -12,7 +12,7 @@ def generate_launch_description():
 
     gps_node = Node(
         package='gps_driver',
-        executable='driver',
+        executable='gps_driver',
         name='gps_driver',
         parameters=[{
             'port': LaunchConfiguration('port')

@@ -1,0 +1,40 @@
+[0.606s] Invoking command in '/home/savannah/EECE5554/LAB4/src/imu_driver': PYTHONPATH=/home/savannah/EECE5554/LAB4/build/imu_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_driver build --build-base /home/savannah/EECE5554/LAB4/build/imu_driver/build install --record /home/savannah/EECE5554/LAB4/build/imu_driver/install.log --single-version-externally-managed install_data
+[0.783s] running egg_info
+[0.783s] creating ../../build/imu_driver/imu_driver.egg-info
+[0.783s] writing ../../build/imu_driver/imu_driver.egg-info/PKG-INFO
+[0.784s] writing dependency_links to ../../build/imu_driver/imu_driver.egg-info/dependency_links.txt
+[0.784s] writing entry points to ../../build/imu_driver/imu_driver.egg-info/entry_points.txt
+[0.784s] writing requirements to ../../build/imu_driver/imu_driver.egg-info/requires.txt
+[0.784s] writing top-level names to ../../build/imu_driver/imu_driver.egg-info/top_level.txt
+[0.784s] writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+[0.785s] reading manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+[0.786s] adding license file 'LICENSE'
+[0.786s] writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+[0.786s] running build
+[0.786s] running build_py
+[0.787s] creating /home/savannah/EECE5554/LAB4/build/imu_driver/build
+[0.787s] creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib
+[0.787s] creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+[0.787s] copying imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+[0.787s] copying imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+[0.788s] running install
+[0.788s] running install_lib
+[0.789s] creating /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+[0.789s] copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+[0.789s] copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+[0.789s] byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/imu_driver.py to imu_driver.cpython-310.pyc
+[0.790s] byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/__init__.py to __init__.cpython-310.pyc
+[0.790s] running install_data
+[0.791s] creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index
+[0.791s] creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index
+[0.791s] creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages
+[0.791s] copying resource/imu_driver -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages
+[0.791s] copying package.xml -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver
+[0.791s] creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch
+[0.791s] copying launch/imu_launch.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch
+[0.791s] running install_egg_info
+[0.793s] Copying ../../build/imu_driver/imu_driver.egg-info to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver-0.0.0-py3.10.egg-info
+[0.794s] running install_scripts
+[0.809s] Installing imu_driver script to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/imu_driver
+[0.810s] writing list of installed files to '/home/savannah/EECE5554/LAB4/build/imu_driver/install.log'
+[0.830s] Invoked command in '/home/savannah/EECE5554/LAB4/src/imu_driver' returned '0': PYTHONPATH=/home/savannah/EECE5554/LAB4/build/imu_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_driver build --build-base /home/savannah/EECE5554/LAB4/build/imu_driver/build install --record /home/savannah/EECE5554/LAB4/build/imu_driver/install.log --single-version-externally-managed install_data

@@ -1,0 +1,225 @@
+[0.010s] Invoking command in '/home/savannah/EECE5554/LAB4/build/gps_message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake /home/savannah/EECE5554/LAB4/src/gps_message -DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB4/install/gps_message
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.118s] -- Detecting C compiler ABI info
+[0.188s] -- Detecting C compiler ABI info - done
+[0.194s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.195s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.196s] -- Detecting CXX compiler ABI info
+[0.271s] -- Detecting CXX compiler ABI info - done
+[0.277s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.277s] -- Detecting CXX compile features
+[0.277s] -- Detecting CXX compile features - done
+[0.279s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.410s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.493s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.498s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.500s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.530s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.555s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.812s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.010s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.311s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.312s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.334s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.334s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.334s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.334s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.354s] -- Found PythonExtra: .so  
+[1.406s] -- Configuring done
+[1.430s] -- Generating done
+[1.440s] -- Build files have been written to: /home/savannah/EECE5554/LAB4/build/gps_message
+[1.447s] Invoked command in '/home/savannah/EECE5554/LAB4/build/gps_message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake /home/savannah/EECE5554/LAB4/src/gps_message -DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB4/install/gps_message
+[1.452s] Invoking command in '/home/savannah/EECE5554/LAB4/build/gps_message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake --build /home/savannah/EECE5554/LAB4/build/gps_message -- -j4 -l4
+[1.489s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.506s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.519s] [  6%] Built target ament_cmake_python_copy_gps_message
+[1.773s] running egg_info
+[1.773s] creating gps_message.egg-info
+[1.773s] writing gps_message.egg-info/PKG-INFO
+[1.773s] writing dependency_links to gps_message.egg-info/dependency_links.txt
+[1.775s] writing top-level names to gps_message.egg-info/top_level.txt
+[1.775s] writing manifest file 'gps_message.egg-info/SOURCES.txt'
+[1.782s] reading manifest file 'gps_message.egg-info/SOURCES.txt'
+[1.782s] writing manifest file 'gps_message.egg-info/SOURCES.txt'
+[1.807s] [  6%] Built target ament_cmake_python_build_gps_message_egg
+[1.824s] [  6%] Built target gps_message__cpp
+[1.828s] [  9%] [32mBuilding C object CMakeFiles/gps_message__rosidl_generator_c.dir/rosidl_generator_c/gps_message/msg/detail/gps_msg__functions.c.o[0m
+[1.837s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.844s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.844s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.914s] [ 22%] [32m[1mLinking C shared library libgps_message__rosidl_generator_c.so[0m
+[1.999s] [ 22%] Built target gps_message__rosidl_generator_c
+[2.021s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.145s] [ 29%] [32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gps_message/msg/detail/dds_fastrtps/gps_msg__type_support.cpp.o[0m
+[2.318s] [ 32%] [32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gps_message/msg/gps_msg__type_support.cpp.o[0m
+[2.376s] [ 35%] [32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gps_message/msg/detail/gps_msg__type_support.cpp.o[0m
+[2.541s] [ 38%] [32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gps_message/msg/detail/gps_msg__type_support_c.cpp.o[0m
+[2.855s] [ 41%] [32m[1mLinking CXX shared library libgps_message__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.926s] [ 45%] [32m[1mLinking CXX shared library libgps_message__rosidl_typesupport_cpp.so[0m
+[3.030s] [ 45%] Built target gps_message__rosidl_typesupport_cpp
+[3.039s] [ 45%] Built target gps_message__rosidl_typesupport_fastrtps_cpp
+[3.052s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.060s] [ 51%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.121s] [ 54%] [32m[1mLinking CXX shared library libgps_message__rosidl_typesupport_introspection_cpp.so[0m
+[3.221s] [ 58%] [32m[1mLinking CXX shared library libgps_message__rosidl_typesupport_fastrtps_c.so[0m
+[3.242s] [ 58%] Built target gps_message__rosidl_typesupport_introspection_cpp
+[3.385s] [ 58%] Built target gps_message__rosidl_typesupport_fastrtps_c
+[3.458s] [ 61%] [32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_c.dir/rosidl_typesupport_c/gps_message/msg/gps_msg__type_support.cpp.o[0m
+[3.476s] [ 64%] [32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gps_message/msg/detail/gps_msg__type_support.c.o[0m
+[3.515s] [ 67%] [32m[1mLinking CXX shared library libgps_message__rosidl_typesupport_c.so[0m
+[3.552s] [ 70%] [32m[1mLinking C shared library libgps_message__rosidl_typesupport_introspection_c.so[0m
+[3.585s] [ 70%] Built target gps_message__rosidl_typesupport_c
+[3.618s] [ 70%] Built target gps_message__rosidl_typesupport_introspection_c
+[3.654s] [ 70%] Built target gps_message
+[3.702s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.974s] [ 74%] Built target gps_message__py
+[3.996s] [ 77%] [32mBuilding C object CMakeFiles/gps_message__rosidl_generator_py.dir/rosidl_generator_py/gps_message/msg/_gps_msg_s.c.o[0m
+[4.092s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/gps_message/libgps_message__rosidl_generator_py.so[0m
+[4.126s] [ 80%] Built target gps_message__rosidl_generator_py
+[4.155s] [ 83%] [32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.155s] [ 87%] [32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.155s] [ 90%] [32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_c.c.o[0m
+[4.229s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.236s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.239s] [100%] [32m[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.262s] [100%] Built target gps_message__rosidl_typesupport_c__pyext
+[4.279s] [100%] Built target gps_message__rosidl_typesupport_fastrtps_c__pyext
+[4.281s] [100%] Built target gps_message__rosidl_typesupport_introspection_c__pyext
+[4.292s] Invoked command in '/home/savannah/EECE5554/LAB4/build/gps_message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake --build /home/savannah/EECE5554/LAB4/build/gps_message -- -j4 -l4
+[4.301s] Invoking command in '/home/savannah/EECE5554/LAB4/build/gps_message': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake --install /home/savannah/EECE5554/LAB4/build/gps_message
+[4.307s] -- Install configuration: ""
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/rosidl_interfaces/gps_message
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/gps_msg.h
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__functions.h
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.h
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__functions.c
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__struct.h
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_generator_c__visibility_control.h
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/library_path.sh
+[4.308s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/library_path.dsv
+[4.314s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_c.so
+[4.315s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_c.so" to ""
+[4.316s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.316s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.316s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.316s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_fastrtps_c.h
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_c.so
+[4.317s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_c.so" to ""
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_introspection_c.h
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.c
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_c.so
+[4.317s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_c.so" to ""
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_c.so
+[4.317s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_c.so" to ""
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/gps_msg.hpp
+[4.317s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__struct.hpp
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__traits.hpp
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__builder.hpp
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.hpp
+[4.317s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/dds_fastrtps
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_cpp.so
+[4.318s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg
+[4.318s] -- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.cpp
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_introspection_cpp.hpp
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_cpp.so
+[4.318s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_cpp.so" to ""
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_cpp.so
+[4.318s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_cpp.so" to ""
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/pythonpath.sh
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/pythonpath.dsv
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/top_level.txt
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/PKG-INFO
+[4.318s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_c.c
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/libgps_message__rosidl_generator_py.so
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg_s.c
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg.py
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/__init__.py
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/__init__.py
+[4.319s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_introspection_c.c
+[4.359s] Listing '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message'...
+[4.360s] Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/__init__.py'...
+[4.360s] Listing '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg'...
+[4.360s] Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/__init__.py'...
+[4.360s] Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg.py'...
+[4.364s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.364s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.365s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.365s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.366s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.367s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.368s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_py.so
+[4.369s] -- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_py.so" to ""
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/msg/GpsMsg.idl
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/msg/GpsMsg.msg
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/package_run_dependencies/gps_message
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/parent_prefix_path/gps_message
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/ament_prefix_path.sh
+[4.370s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/ament_prefix_path.dsv
+[4.374s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/path.sh
+[4.374s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/path.dsv
+[4.376s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.bash
+[4.377s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.sh
+[4.377s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.zsh
+[4.377s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.dsv
+[4.377s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/package.dsv
+[4.377s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/packages/gps_message
+[4.379s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cExport.cmake
+[4.379s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cExport-noconfig.cmake
+[4.379s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cExport.cmake
+[4.380s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.380s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cExport.cmake
+[4.382s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.383s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cExport.cmake
+[4.383s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cExport-noconfig.cmake
+[4.384s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cppExport.cmake
+[4.384s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cppExport.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cppExport.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cppExport-noconfig.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_pyExport.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_pyExport-noconfig.cmake
+[4.385s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake-extras.cmake
+[4.386s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.386s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.388s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_libraries-extras.cmake
+[4.388s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_targets-extras.cmake
+[4.389s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.389s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.389s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_messageConfig.cmake
+[4.389s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_messageConfig-version.cmake
+[4.390s] -- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/package.xml
+[4.393s] Invoked command in '/home/savannah/EECE5554/LAB4/build/gps_message' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/savannah/EECE5554/LAB4/install/fusion_driver:/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/opt/ros/humble /usr/bin/cmake --install /home/savannah/EECE5554/LAB4/build/gps_message

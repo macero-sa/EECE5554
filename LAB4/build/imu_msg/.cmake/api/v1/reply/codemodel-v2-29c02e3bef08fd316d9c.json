@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-803ae6db7413b7091029.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "imu_msg__py",
+					"jsonFile" : "directory-imu_msg__py-f21d41c5ac5b610f14b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/savannah/EECE5554/LAB4/build/imu_msg/imu_msg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "imu_msg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_imu_msg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_imu_msg_egg-dd713b3731e918733aee.json",
+					"name" : "ament_cmake_python_build_imu_msg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_imu_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_imu_msg-d587dcac0c9fa7665b90.json",
+					"name" : "ament_cmake_python_copy_imu_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg-fd7b305e30026343e656.json",
+					"name" : "imu_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__cpp-42329e9521279efa99d9.json",
+					"name" : "imu_msg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imu_msg__py::@38a7e22dd44ce681a337",
+					"jsonFile" : "target-imu_msg__py-83ec2c4a74166eb8504a.json",
+					"name" : "imu_msg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_generator_c-2f37c8451801e3543ddd.json",
+					"name" : "imu_msg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_generator_py-5cbc5e731ef326d7c325.json",
+					"name" : "imu_msg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_c-81deeadecc6aa9af3ea8.json",
+					"name" : "imu_msg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_c__pyext-60109b24303a17c4a16d.json",
+					"name" : "imu_msg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_cpp-712ec2443878dcec8e5c.json",
+					"name" : "imu_msg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_fastrtps_c-b54c5286aa880c0ea499.json",
+					"name" : "imu_msg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_fastrtps_c__pyext-132ba896570fd27518c2.json",
+					"name" : "imu_msg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_fastrtps_cpp-96297eb89eafe5422a69.json",
+					"name" : "imu_msg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_introspection_c-7cd9833284d9397ae16d.json",
+					"name" : "imu_msg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_introspection_c__pyext-1a0465471d4ad9a574a0.json",
+					"name" : "imu_msg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg__rosidl_typesupport_introspection_cpp-9f1046a37df494e1b8fa.json",
+					"name" : "imu_msg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_msg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_msg_uninstall-28125cb3bf3c97da8bad.json",
+					"name" : "imu_msg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cfee4232b5c975eb9090.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/savannah/EECE5554/LAB4/build/imu_msg",
+		"source" : "/home/savannah/EECE5554/LAB4/src/imu_msg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

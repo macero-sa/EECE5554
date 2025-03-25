@@ -1,0 +1,4 @@
+source;share/gps_message/environment/ament_prefix_path.sh
+source;share/gps_message/environment/library_path.sh
+source;share/gps_message/environment/path.sh
+source;share/gps_message/environment/pythonpath.sh

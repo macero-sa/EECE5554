@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/imu_driver/imu_driver.egg-info
+writing ../../build/imu_driver/imu_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_driver/imu_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_driver/imu_driver.egg-info/entry_points.txt
+writing requirements to ../../build/imu_driver/imu_driver.egg-info/requires.txt
+writing top-level names to ../../build/imu_driver/imu_driver.egg-info/top_level.txt
+writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/savannah/EECE5554/LAB4/build/imu_driver/build
+creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib
+creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+copying imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+copying imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver
+running install
+running install_lib
+creating /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver
+byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/imu_driver.py to imu_driver.cpython-310.pyc
+byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index
+creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index
+creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages
+copying resource/imu_driver -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver
+creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch
+copying launch/imu_launch.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch
+running install_egg_info
+Copying ../../build/imu_driver/imu_driver.egg-info to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_driver script to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/imu_driver
+writing list of installed files to '/home/savannah/EECE5554/LAB4/build/imu_driver/install.log'

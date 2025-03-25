@@ -1,0 +1,679 @@
+[0.000000] (-) TimerEvent: {}
+[0.000304] (gps_message) JobQueued: {'identifier': 'gps_message', 'dependencies': OrderedDict()}
+[0.000327] (imu_msg) JobQueued: {'identifier': 'imu_msg', 'dependencies': OrderedDict()}
+[0.000345] (gps_driver) JobQueued: {'identifier': 'gps_driver', 'dependencies': OrderedDict([('gps_message', '/home/savannah/EECE5554/LAB4/install/gps_message')])}
+[0.000357] (imu_driver) JobQueued: {'identifier': 'imu_driver', 'dependencies': OrderedDict([('imu_msg', '/home/savannah/EECE5554/LAB4/install/imu_msg')])}
+[0.000368] (fusion_driver) JobQueued: {'identifier': 'fusion_driver', 'dependencies': OrderedDict([('gps_message', '/home/savannah/EECE5554/LAB4/install/gps_message'), ('imu_msg', '/home/savannah/EECE5554/LAB4/install/imu_msg'), ('gps_driver', '/home/savannah/EECE5554/LAB4/install/gps_driver'), ('imu_driver', '/home/savannah/EECE5554/LAB4/install/imu_driver')])}
+[0.000381] (gps_message) JobStarted: {'identifier': 'gps_message'}
+[0.010840] (imu_msg) JobStarted: {'identifier': 'imu_msg'}
+[0.015073] (gps_message) JobProgress: {'identifier': 'gps_message', 'progress': 'cmake'}
+[0.015887] (gps_message) Command: {'cmd': ['/usr/bin/cmake', '/home/savannah/EECE5554/LAB4/src/gps_message', '-DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB4/install/gps_message'], 'cwd': '/home/savannah/EECE5554/LAB4/build/gps_message', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/gps_message'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.020884] (imu_msg) JobProgress: {'identifier': 'imu_msg', 'progress': 'cmake'}
+[0.025120] (imu_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/savannah/EECE5554/LAB4/src/imu_msg', '-DCMAKE_INSTALL_PREFIX=/home/savannah/EECE5554/LAB4/install/imu_msg'], 'cwd': '/home/savannah/EECE5554/LAB4/build/imu_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/imu_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098828] (-) TimerEvent: {}
+[0.111762] (imu_msg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.119447] (gps_message) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.176570] (gps_message) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.177467] (imu_msg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.188811] (gps_message) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.189020] (imu_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199760] (-) TimerEvent: {}
+[0.254236] (imu_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.257391] (gps_message) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.260221] (imu_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.260870] (imu_msg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.262257] (imu_msg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.262844] (gps_message) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.263156] (gps_message) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.264064] (gps_message) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.266100] (gps_message) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.266865] (imu_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300115] (-) TimerEvent: {}
+[0.364837] (gps_message) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.376911] (imu_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.380170] (gps_message) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.380509] (gps_message) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.380616] (gps_message) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.388211] (gps_message) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.390775] (imu_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.391036] (imu_msg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.391988] (imu_msg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.397557] (imu_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400605] (-) TimerEvent: {}
+[0.501534] (-) TimerEvent: {}
+[0.587591] (imu_msg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.588245] (gps_message) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.602333] (-) TimerEvent: {}
+[0.678250] (gps_message) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.678907] (imu_msg) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.685761] (gps_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.693348] (gps_message) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.702629] (-) TimerEvent: {}
+[0.716328] (imu_msg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.718115] (imu_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.725260] (imu_msg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.740465] (gps_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.742790] (imu_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.754157] (imu_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.769870] (gps_message) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.781943] (imu_msg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.804240] (-) TimerEvent: {}
+[0.842766] (imu_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.905665] (-) TimerEvent: {}
+[1.006333] (-) TimerEvent: {}
+[1.048770] (gps_message) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.108517] (-) TimerEvent: {}
+[1.144727] (imu_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.210096] (-) TimerEvent: {}
+[1.311215] (-) TimerEvent: {}
+[1.324619] (gps_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.411366] (-) TimerEvent: {}
+[1.514742] (-) TimerEvent: {}
+[1.616275] (-) TimerEvent: {}
+[1.701785] (gps_message) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.716383] (-) TimerEvent: {}
+[1.721755] (imu_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.752017] (gps_message) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.752694] (gps_message) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.784532] (gps_message) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.785262] (gps_message) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.785357] (gps_message) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.785436] (gps_message) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.803329] (gps_message) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.816730] (-) TimerEvent: {}
+[1.862586] (gps_message) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.891648] (gps_message) StdoutLine: {'line': b'-- Generating done\n'}
+[1.900558] (gps_message) StdoutLine: {'line': b'-- Build files have been written to: /home/savannah/EECE5554/LAB4/build/gps_message\n'}
+[1.904197] (imu_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.905600] (gps_message) CommandEnded: {'returncode': 0}
+[1.906106] (gps_message) JobProgress: {'identifier': 'gps_message', 'progress': 'build'}
+[1.909819] (gps_message) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/savannah/EECE5554/LAB4/build/gps_message', '--', '-j4', '-l4'], 'cwd': '/home/savannah/EECE5554/LAB4/build/gps_message', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/gps_message'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.917040] (-) TimerEvent: {}
+[1.922000] (imu_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.922254] (imu_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.945969] (gps_message) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.946195] (imu_msg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.949285] (imu_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.949706] (imu_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.949786] (imu_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.959367] (gps_message) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.963957] (gps_message) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_gps_message\n'}
+[1.979206] (imu_msg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.017291] (-) TimerEvent: {}
+[2.077272] (imu_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.117416] (-) TimerEvent: {}
+[2.120767] (imu_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[2.159934] (imu_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/savannah/EECE5554/LAB4/build/imu_msg\n'}
+[2.183669] (imu_msg) CommandEnded: {'returncode': 0}
+[2.184183] (imu_msg) JobProgress: {'identifier': 'imu_msg', 'progress': 'build'}
+[2.188695] (imu_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/savannah/EECE5554/LAB4/build/imu_msg', '--', '-j4', '-l4'], 'cwd': '/home/savannah/EECE5554/LAB4/build/imu_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/imu_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.217522] (-) TimerEvent: {}
+[2.229607] (imu_msg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.278105] (imu_msg) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.295239] (imu_msg) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_imu_msg\n'}
+[2.317717] (-) TimerEvent: {}
+[2.354954] (gps_message) StdoutLine: {'line': b'running egg_info\n'}
+[2.360848] (gps_message) StdoutLine: {'line': b'creating gps_message.egg-info\n'}
+[2.362049] (gps_message) StdoutLine: {'line': b'writing gps_message.egg-info/PKG-INFO\n'}
+[2.362237] (gps_message) StdoutLine: {'line': b'writing dependency_links to gps_message.egg-info/dependency_links.txt\n'}
+[2.362316] (gps_message) StdoutLine: {'line': b'writing top-level names to gps_message.egg-info/top_level.txt\n'}
+[2.362382] (gps_message) StdoutLine: {'line': b"writing manifest file 'gps_message.egg-info/SOURCES.txt'\n"}
+[2.379684] (gps_message) StdoutLine: {'line': b"reading manifest file 'gps_message.egg-info/SOURCES.txt'\n"}
+[2.385388] (gps_message) StdoutLine: {'line': b"writing manifest file 'gps_message.egg-info/SOURCES.txt'\n"}
+[2.418654] (-) TimerEvent: {}
+[2.477750] (gps_message) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_gps_message_egg\n'}
+[2.519627] (-) TimerEvent: {}
+[2.529140] (gps_message) StdoutLine: {'line': b'[  6%] Built target gps_message__cpp\n'}
+[2.543489] (gps_message) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_generator_c.dir/rosidl_generator_c/gps_message/msg/detail/gps_msg__functions.c.o\x1b[0m\n'}
+[2.548161] (gps_message) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.550216] (gps_message) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.557585] (gps_message) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.619771] (-) TimerEvent: {}
+[2.689585] (imu_msg) StdoutLine: {'line': b'running egg_info\n'}
+[2.690564] (imu_msg) StdoutLine: {'line': b'creating imu_msg.egg-info\n'}
+[2.690722] (imu_msg) StdoutLine: {'line': b'writing imu_msg.egg-info/PKG-INFO\n'}
+[2.690797] (imu_msg) StdoutLine: {'line': b'writing dependency_links to imu_msg.egg-info/dependency_links.txt\n'}
+[2.691074] (imu_msg) StdoutLine: {'line': b'writing top-level names to imu_msg.egg-info/top_level.txt\n'}
+[2.692245] (imu_msg) StdoutLine: {'line': b"writing manifest file 'imu_msg.egg-info/SOURCES.txt'\n"}
+[2.693857] (imu_msg) StdoutLine: {'line': b"reading manifest file 'imu_msg.egg-info/SOURCES.txt'\n"}
+[2.697111] (imu_msg) StdoutLine: {'line': b"writing manifest file 'imu_msg.egg-info/SOURCES.txt'\n"}
+[2.719926] (-) TimerEvent: {}
+[2.755727] (gps_message) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libgps_message__rosidl_generator_c.so\x1b[0m\n'}
+[2.757779] (imu_msg) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_imu_msg_egg\n'}
+[2.813712] (imu_msg) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_generator_c.dir/rosidl_generator_c/imu_msg/msg/detail/imu_msg__functions.c.o\x1b[0m\n'}
+[2.820986] (-) TimerEvent: {}
+[2.845186] (imu_msg) StdoutLine: {'line': b'[  9%] Built target imu_msg__cpp\n'}
+[2.849159] (gps_message) StdoutLine: {'line': b'[ 22%] Built target gps_message__rosidl_generator_c\n'}
+[2.879583] (imu_msg) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.886330] (gps_message) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.886936] (imu_msg) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.891847] (imu_msg) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.931626] (-) TimerEvent: {}
+[2.953564] (imu_msg) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libimu_msg__rosidl_generator_c.so\x1b[0m\n'}
+[3.032548] (-) TimerEvent: {}
+[3.103540] (imu_msg) StdoutLine: {'line': b'[ 22%] Built target imu_msg__rosidl_generator_c\n'}
+[3.138629] (-) TimerEvent: {}
+[3.140575] (imu_msg) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.144489] (gps_message) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gps_message/msg/gps_msg__type_support.cpp.o\x1b[0m\n'}
+[3.243597] (-) TimerEvent: {}
+[3.344035] (-) TimerEvent: {}
+[3.447516] (-) TimerEvent: {}
+[3.456163] (gps_message) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gps_message/msg/detail/dds_fastrtps/gps_msg__type_support.cpp.o\x1b[0m\n'}
+[3.536239] (gps_message) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gps_message/msg/detail/gps_msg__type_support.cpp.o\x1b[0m\n'}
+[3.547782] (-) TimerEvent: {}
+[3.648611] (-) TimerEvent: {}
+[3.760522] (-) TimerEvent: {}
+[3.845614] (imu_msg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/imu_msg/msg/imu_msg__type_support.cpp.o\x1b[0m\n'}
+[3.862334] (-) TimerEvent: {}
+[3.934773] (imu_msg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/imu_msg/msg/detail/dds_fastrtps/imu_msg__type_support.cpp.o\x1b[0m\n'}
+[3.960755] (imu_msg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/imu_msg/msg/detail/imu_msg__type_support.cpp.o\x1b[0m\n'}
+[3.965989] (-) TimerEvent: {}
+[3.994510] (gps_message) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gps_message/msg/detail/gps_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.067080] (-) TimerEvent: {}
+[4.168556] (-) TimerEvent: {}
+[4.185328] (imu_msg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/imu_msg/msg/detail/imu_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.271150] (-) TimerEvent: {}
+[4.375483] (-) TimerEvent: {}
+[4.480432] (-) TimerEvent: {}
+[4.581271] (gps_message) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libgps_message__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.581503] (-) TimerEvent: {}
+[4.682043] (-) TimerEvent: {}
+[4.737426] (gps_message) StdoutLine: {'line': b'[ 41%] Built target gps_message__rosidl_typesupport_cpp\n'}
+[4.762586] (gps_message) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.784544] (-) TimerEvent: {}
+[4.815568] (imu_msg) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libimu_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.889270] (-) TimerEvent: {}
+[4.914146] (imu_msg) StdoutLine: {'line': b'[ 41%] Built target imu_msg__rosidl_typesupport_cpp\n'}
+[4.939777] (imu_msg) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.956787] (gps_message) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libgps_message__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.963591] (gps_message) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libgps_message__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.989429] (-) TimerEvent: {}
+[5.067621] (imu_msg) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libimu_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.075138] (imu_msg) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libimu_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.089645] (-) TimerEvent: {}
+[5.093866] (gps_message) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libgps_message__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.121701] (gps_message) StdoutLine: {'line': b'[ 54%] Built target gps_message__rosidl_typesupport_introspection_cpp\n'}
+[5.147536] (gps_message) StdoutLine: {'line': b'[ 54%] Built target gps_message__rosidl_typesupport_fastrtps_cpp\n'}
+[5.171210] (gps_message) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.189823] (-) TimerEvent: {}
+[5.248239] (imu_msg) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libimu_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.281564] (gps_message) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gps_message/msg/detail/gps_msg__type_support.c.o\x1b[0m\n'}
+[5.290868] (-) TimerEvent: {}
+[5.298613] (imu_msg) StdoutLine: {'line': b'[ 54%] Built target imu_msg__rosidl_typesupport_introspection_cpp\n'}
+[5.311159] (imu_msg) StdoutLine: {'line': b'[ 54%] Built target imu_msg__rosidl_typesupport_fastrtps_c\n'}
+[5.337272] (gps_message) StdoutLine: {'line': b'[ 61%] Built target gps_message__rosidl_typesupport_fastrtps_c\n'}
+[5.341003] (imu_msg) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.390804] (gps_message) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libgps_message__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.390985] (-) TimerEvent: {}
+[5.433800] (imu_msg) StdoutLine: {'line': b'[ 58%] Built target imu_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[5.461168] (gps_message) StdoutLine: {'line': b'[ 64%] Built target gps_message__rosidl_typesupport_introspection_c\n'}
+[5.474600] (imu_msg) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/imu_msg/msg/detail/imu_msg__type_support.c.o\x1b[0m\n'}
+[5.491815] (-) TimerEvent: {}
+[5.528327] (imu_msg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libimu_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.563509] (imu_msg) StdoutLine: {'line': b'[ 64%] Built target imu_msg__rosidl_typesupport_introspection_c\n'}
+[5.568705] (gps_message) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/gps_message__rosidl_typesupport_c.dir/rosidl_typesupport_c/gps_message/msg/gps_msg__type_support.cpp.o\x1b[0m\n'}
+[5.591902] (-) TimerEvent: {}
+[5.597325] (gps_message) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libgps_message__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.634298] (imu_msg) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/imu_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/imu_msg/msg/imu_msg__type_support.cpp.o\x1b[0m\n'}
+[5.655877] (gps_message) StdoutLine: {'line': b'[ 70%] Built target gps_message__rosidl_typesupport_c\n'}
+[5.672718] (imu_msg) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libimu_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.682685] (gps_message) StdoutLine: {'line': b'[ 70%] Built target gps_message\n'}
+[5.692234] (-) TimerEvent: {}
+[5.708747] (gps_message) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.722917] (imu_msg) StdoutLine: {'line': b'[ 70%] Built target imu_msg__rosidl_typesupport_c\n'}
+[5.741007] (imu_msg) StdoutLine: {'line': b'[ 70%] Built target imu_msg\n'}
+[5.758657] (imu_msg) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.792754] (-) TimerEvent: {}
+[5.893614] (-) TimerEvent: {}
+[5.992185] (gps_message) StdoutLine: {'line': b'[ 74%] Built target gps_message__py\n'}
+[5.993834] (-) TimerEvent: {}
+[6.015468] (gps_message) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_generator_py.dir/rosidl_generator_py/gps_message/msg/_gps_msg_s.c.o\x1b[0m\n'}
+[6.021952] (imu_msg) StdoutLine: {'line': b'[ 74%] Built target imu_msg__py\n'}
+[6.042543] (imu_msg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_generator_py.dir/rosidl_generator_py/imu_msg/msg/_imu_msg_s.c.o\x1b[0m\n'}
+[6.093970] (-) TimerEvent: {}
+[6.151453] (imu_msg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/imu_msg/libimu_msg__rosidl_generator_py.so\x1b[0m\n'}
+[6.154722] (gps_message) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/gps_message/libgps_message__rosidl_generator_py.so\x1b[0m\n'}
+[6.190590] (gps_message) StdoutLine: {'line': b'[ 80%] Built target gps_message__rosidl_generator_py\n'}
+[6.191890] (imu_msg) StdoutLine: {'line': b'[ 80%] Built target imu_msg__rosidl_generator_py\n'}
+[6.196737] (-) TimerEvent: {}
+[6.213295] (imu_msg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.214702] (gps_message) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.217892] (gps_message) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.220952] (gps_message) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/gps_message__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/gps_message/_gps_message_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.221321] (imu_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.231551] (imu_msg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/imu_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/imu_msg/_imu_msg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.299513] (-) TimerEvent: {}
+[6.318156] (gps_message) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.343701] (gps_message) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.383804] (imu_msg) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.397696] (gps_message) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.399204] (imu_msg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.400267] (-) TimerEvent: {}
+[6.401458] (gps_message) StdoutLine: {'line': b'[100%] Built target gps_message__rosidl_typesupport_c__pyext\n'}
+[6.407745] (gps_message) StdoutLine: {'line': b'[100%] Built target gps_message__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.421104] (imu_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.464170] (imu_msg) StdoutLine: {'line': b'[100%] Built target imu_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.466524] (imu_msg) StdoutLine: {'line': b'[100%] Built target imu_msg__rosidl_typesupport_c__pyext\n'}
+[6.472280] (gps_message) StdoutLine: {'line': b'[100%] Built target gps_message__rosidl_typesupport_introspection_c__pyext\n'}
+[6.475713] (imu_msg) StdoutLine: {'line': b'[100%] Built target imu_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[6.486730] (gps_message) CommandEnded: {'returncode': 0}
+[6.487757] (gps_message) JobProgress: {'identifier': 'gps_message', 'progress': 'install'}
+[6.496482] (gps_message) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/savannah/EECE5554/LAB4/build/gps_message'], 'cwd': '/home/savannah/EECE5554/LAB4/build/gps_message', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/gps_message'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.497963] (imu_msg) CommandEnded: {'returncode': 0}
+[6.498613] (imu_msg) JobProgress: {'identifier': 'imu_msg', 'progress': 'install'}
+[6.499411] (imu_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/savannah/EECE5554/LAB4/build/imu_msg'], 'cwd': '/home/savannah/EECE5554/LAB4/build/imu_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'savannah'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/savannah'), ('OLDPWD', '/home/savannah'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'savannah'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'savannah'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FJW132'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/savannah/EECE5554/LAB4/build/imu_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.500441] (-) TimerEvent: {}
+[6.504751] (gps_message) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.504996] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/rosidl_interfaces/gps_message\n'}
+[6.505216] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.505323] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.505372] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/gps_msg.h\n'}
+[6.505498] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.505540] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__functions.h\n'}
+[6.505705] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.h\n'}
+[6.505812] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__functions.c\n'}
+[6.505902] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__struct.h\n'}
+[6.506132] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.506480] (imu_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.506536] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/library_path.sh\n'}
+[6.507062] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/library_path.dsv\n'}
+[6.507124] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_c.so\n'}
+[6.507168] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/ament_index/resource_index/rosidl_interfaces/imu_msg\n'}
+[6.507251] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.507356] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_c.so" to ""\n'}
+[6.507485] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.507538] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.507614] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.510017] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[6.510140] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.510225] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_c.so\n'}
+[6.510561] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.510788] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/imu_msg.h\n'}
+[6.511207] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.511344] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__functions.c\n'}
+[6.511522] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__struct.h\n'}
+[6.511614] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.h\n'}
+[6.511735] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.511932] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__functions.h\n'}
+[6.512025] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.512153] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.512234] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.512449] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_introspection_c.h\n'}
+[6.512572] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.512702] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.c\n'}
+[6.514361] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.514429] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_c.so\n'}
+[6.514546] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.514602] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_c.so\n'}
+[6.514657] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_c.so" to ""\n'}
+[6.514729] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.514794] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.514843] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/gps_msg.hpp\n'}
+[6.514892] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.514928] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__struct.hpp\n'}
+[6.514965] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__traits.hpp\n'}
+[6.514999] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__builder.hpp\n'}
+[6.515033] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.hpp\n'}
+[6.515067] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.515106] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.515138] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.515171] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.515204] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.515241] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/dds_fastrtps\n'}
+[6.515274] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.515307] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.515341] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.515377] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message\n'}
+[6.515469] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg\n'}
+[6.515512] (gps_message) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail\n'}
+[6.515547] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__type_support.cpp\n'}
+[6.515580] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/include/gps_message/gps_message/msg/detail/gps_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.515613] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_cpp.so\n'}
+[6.515646] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/library_path.sh\n'}
+[6.515690] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/library_path.dsv\n'}
+[6.515723] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_generator_c.so\n'}
+[6.515756] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_generator_c.so" to ""\n'}
+[6.515789] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.515821] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.515855] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.515888] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[6.515922] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.515955] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[6.515990] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.516023] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.516056] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.516090] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/imu_msg.hpp\n'}
+[6.516123] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.516160] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__struct.hpp\n'}
+[6.516215] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__traits.hpp\n'}
+[6.516249] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.hpp\n'}
+[6.516283] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__builder.hpp\n'}
+[6.516340] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.516393] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.516468] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.516534] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.516576] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/dds_fastrtps\n'}
+[6.516610] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.516644] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.516679] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.516713] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.516747] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.516782] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.516818] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.516853] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_introspection_c.h\n'}
+[6.516889] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.516929] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_cpp.so\n'}
+[6.516966] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_typesupport_cpp.so" to ""\n'}
+[6.517000] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/pythonpath.sh\n'}
+[6.517041] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/pythonpath.dsv\n'}
+[6.517074] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info\n'}
+[6.517108] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.517141] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.517174] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.517208] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.517242] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.c\n'}
+[6.517277] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.517311] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_c.so\n'}
+[6.517344] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.517377] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_c.so\n'}
+[6.517412] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_c.so" to ""\n'}
+[6.519805] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg\n'}
+[6.519859] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg\n'}
+[6.519900] (imu_msg) StdoutLine: {'line': b'-- Up-to-date: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail\n'}
+[6.519940] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__type_support.cpp\n'}
+[6.519980] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/include/imu_msg/imu_msg/msg/detail/imu_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.520019] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[6.520058] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.520097] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_cpp.so\n'}
+[6.520135] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[6.520174] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/pythonpath.sh\n'}
+[6.520212] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message\n'}
+[6.520254] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/pythonpath.dsv\n'}
+[6.520298] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info\n'}
+[6.520335] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.520374] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.520412] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_c.c\n'}
+[6.520450] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/libgps_message__rosidl_generator_py.so\n'}
+[6.520488] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.520576] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.520628] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.520690] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.520740] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg\n'}
+[6.520780] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_c.c\n'}
+[6.520818] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.520864] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/libimu_msg__rosidl_generator_py.so\n'}
+[6.520918] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.520972] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.521012] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg\n'}
+[6.521051] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/_imu_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.521089] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.521127] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg_s.c\n'}
+[6.521165] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.521204] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg.py\n'}
+[6.521250] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.521288] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/__init__.py\n'}
+[6.521327] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg\n'}
+[6.521365] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg_s.c\n'}
+[6.521405] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/__init__.py\n'}
+[6.521455] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg.py\n'}
+[6.521498] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/_gps_message_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.521582] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/__init__.py\n'}
+[6.521633] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/__init__.py\n'}
+[6.548588] (gps_message) StdoutLine: {'line': b"Listing '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message'...\n"}
+[6.548734] (gps_message) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/__init__.py'...\n"}
+[6.548776] (gps_message) StdoutLine: {'line': b"Listing '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg'...\n"}
+[6.548812] (gps_message) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/__init__.py'...\n"}
+[6.548847] (gps_message) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/msg/_gps_msg.py'...\n"}
+[6.548881] (imu_msg) StdoutLine: {'line': b"Listing '/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg'...\n"}
+[6.548926] (imu_msg) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/__init__.py'...\n"}
+[6.548960] (imu_msg) StdoutLine: {'line': b"Listing '/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg'...\n"}
+[6.548994] (imu_msg) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/__init__.py'...\n"}
+[6.549041] (imu_msg) StdoutLine: {'line': b"Compiling '/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/msg/_imu_msg.py'...\n"}
+[6.551381] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.551622] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.551756] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.551907] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.552031] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.552251] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages/gps_message/gps_message_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.552823] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_py.so\n'}
+[6.552925] (gps_message) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/gps_message/lib/libgps_message__rosidl_generator_py.so" to ""\n'}
+[6.552967] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/msg/GpsMsg.idl\n'}
+[6.553010] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.553065] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/msg/GpsMsg.msg\n'}
+[6.553380] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.553482] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/package_run_dependencies/gps_message\n'}
+[6.553588] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/parent_prefix_path/gps_message\n'}
+[6.553637] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/ament_prefix_path.sh\n'}
+[6.553707] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.553758] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/ament_prefix_path.dsv\n'}
+[6.553810] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/path.sh\n'}
+[6.554524] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.554585] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/environment/path.dsv\n'}
+[6.554625] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.bash\n'}
+[6.554726] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.sh\n'}
+[6.554825] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.zsh\n'}
+[6.554914] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/local_setup.dsv\n'}
+[6.554993] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/package.dsv\n'}
+[6.555053] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/ament_index/resource_index/packages/gps_message\n'}
+[6.555138] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cExport.cmake\n'}
+[6.555198] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.555282] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.555373] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.555431] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.555535] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.555571] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cExport.cmake\n'}
+[6.555650] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.555718] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages/imu_msg/imu_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.555755] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_generator_py.so\n'}
+[6.555813] (imu_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/savannah/EECE5554/LAB4/install/imu_msg/lib/libimu_msg__rosidl_generator_py.so" to ""\n'}
+[6.555853] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/msg/ImuMsg.idl\n'}
+[6.555887] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/msg/ImuMsg.msg\n'}
+[6.555920] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/ament_index/resource_index/package_run_dependencies/imu_msg\n'}
+[6.555952] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/ament_index/resource_index/parent_prefix_path/imu_msg\n'}
+[6.555984] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/ament_prefix_path.sh\n'}
+[6.556017] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/ament_prefix_path.dsv\n'}
+[6.556049] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/path.sh\n'}
+[6.556082] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.556115] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_cppExport.cmake\n'}
+[6.556148] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/environment/path.dsv\n'}
+[6.556197] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/local_setup.bash\n'}
+[6.556231] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.556271] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.556305] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/local_setup.sh\n'}
+[6.556338] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.556371] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/local_setup.zsh\n'}
+[6.556406] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/local_setup.dsv\n'}
+[6.556486] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.556525] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/package.dsv\n'}
+[6.556559] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cppExport.cmake\n'}
+[6.556592] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_message__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.556625] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/ament_index/resource_index/packages/imu_msg\n'}
+[6.556661] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cExport.cmake\n'}
+[6.556695] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.556791] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.556832] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.556868] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_cppExport.cmake\n'}
+[6.556903] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.556938] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.556973] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.557008] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.557049] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cExport.cmake\n'}
+[6.557084] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.557119] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_pyExport.cmake\n'}
+[6.557154] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/export_gps_message__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.557191] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake-extras.cmake\n'}
+[6.557226] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.557300] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.557342] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.557376] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.557412] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.557563] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.557648] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_messageConfig.cmake\n'}
+[6.557703] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/cmake/gps_messageConfig-version.cmake\n'}
+[6.557759] (gps_message) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/gps_message/share/gps_message/package.xml\n'}
+[6.557828] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.557904] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.558040] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cppExport.cmake\n'}
+[6.558081] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.558115] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_pyExport.cmake\n'}
+[6.558149] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/export_imu_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.558183] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[6.558220] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.558253] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.558286] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.558319] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.558351] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.558384] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.558459] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msgConfig.cmake\n'}
+[6.558501] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/cmake/imu_msgConfig-version.cmake\n'}
+[6.558768] (imu_msg) StdoutLine: {'line': b'-- Installing: /home/savannah/EECE5554/LAB4/install/imu_msg/share/imu_msg/package.xml\n'}
+[6.559416] (gps_message) CommandEnded: {'returncode': 0}
+[6.581209] (gps_message) JobEnded: {'identifier': 'gps_message', 'rc': 0}
+[6.581733] (gps_driver) JobStarted: {'identifier': 'gps_driver'}
+[6.585249] (imu_msg) CommandEnded: {'returncode': 0}
+[6.598359] (imu_msg) JobEnded: {'identifier': 'imu_msg', 'rc': 0}
+[6.598760] (imu_driver) JobStarted: {'identifier': 'imu_driver'}
+[6.602730] (-) TimerEvent: {}
+[6.703879] (-) TimerEvent: {}
+[6.804368] (-) TimerEvent: {}
+[6.904879] (-) TimerEvent: {}
+[7.005581] (-) TimerEvent: {}
+[7.105910] (-) TimerEvent: {}
+[7.206321] (-) TimerEvent: {}
+[7.306900] (-) TimerEvent: {}
+[7.409837] (-) TimerEvent: {}
+[7.511637] (-) TimerEvent: {}
+[7.553049] (gps_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_driver', 'build', '--build-base', '/home/savannah/EECE5554/LAB4/build/gps_driver/build', 'install', '--record', '/home/savannah/EECE5554/LAB4/build/gps_driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/savannah/EECE5554/LAB4/src/gps_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'savannah', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/savannah/EECE5554/LAB4/install/gps_message/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/savannah', 'OLDPWD': '/home/savannah', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1701', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'savannah', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'savannah', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FJW132', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/gps_message:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/savannah/EECE5554/LAB4/build/gps_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/savannah/EECE5554/LAB4/build/gps_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/gps_message'}, 'shell': False}
+[7.562609] (imu_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_driver', 'build', '--build-base', '/home/savannah/EECE5554/LAB4/build/imu_driver/build', 'install', '--record', '/home/savannah/EECE5554/LAB4/build/imu_driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/savannah/EECE5554/LAB4/src/imu_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'savannah', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/savannah/EECE5554/LAB4/install/imu_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/savannah', 'OLDPWD': '/home/savannah', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1701', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'savannah', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'savannah', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FJW132', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/imu_msg:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/savannah/EECE5554/LAB4/build/imu_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/savannah/EECE5554/LAB4/build/imu_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/imu_msg'}, 'shell': False}
+[7.612857] (-) TimerEvent: {}
+[7.713259] (-) TimerEvent: {}
+[7.812943] (imu_driver) StdoutLine: {'line': b'running egg_info\n'}
+[7.813471] (-) TimerEvent: {}
+[7.813631] (imu_driver) StdoutLine: {'line': b'creating ../../build/imu_driver/imu_driver.egg-info\n'}
+[7.813755] (imu_driver) StdoutLine: {'line': b'writing ../../build/imu_driver/imu_driver.egg-info/PKG-INFO\n'}
+[7.814535] (imu_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_driver/imu_driver.egg-info/dependency_links.txt\n'}
+[7.814607] (imu_driver) StdoutLine: {'line': b'writing entry points to ../../build/imu_driver/imu_driver.egg-info/entry_points.txt\n'}
+[7.814649] (imu_driver) StdoutLine: {'line': b'writing requirements to ../../build/imu_driver/imu_driver.egg-info/requires.txt\n'}
+[7.814687] (imu_driver) StdoutLine: {'line': b'writing top-level names to ../../build/imu_driver/imu_driver.egg-info/top_level.txt\n'}
+[7.814726] (imu_driver) StdoutLine: {'line': b"writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'\n"}
+[7.815710] (imu_driver) StdoutLine: {'line': b"reading manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'\n"}
+[7.815840] (imu_driver) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.816717] (imu_driver) StdoutLine: {'line': b"writing manifest file '../../build/imu_driver/imu_driver.egg-info/SOURCES.txt'\n"}
+[7.816795] (imu_driver) StdoutLine: {'line': b'running build\n'}
+[7.816860] (imu_driver) StdoutLine: {'line': b'running build_py\n'}
+[7.817557] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/imu_driver/build\n'}
+[7.817639] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib\n'}
+[7.817680] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver\n'}
+[7.817719] (imu_driver) StdoutLine: {'line': b'copying imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver\n'}
+[7.817758] (imu_driver) StdoutLine: {'line': b'copying imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver\n'}
+[7.817796] (imu_driver) StdoutLine: {'line': b'running install\n'}
+[7.818029] (imu_driver) StdoutLine: {'line': b'running install_lib\n'}
+[7.820560] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver\n'}
+[7.820721] (imu_driver) StdoutLine: {'line': b'copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/imu_driver.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver\n'}
+[7.820767] (imu_driver) StdoutLine: {'line': b'copying /home/savannah/EECE5554/LAB4/build/imu_driver/build/lib/imu_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver\n'}
+[7.820807] (imu_driver) StdoutLine: {'line': b'byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/imu_driver.py to imu_driver.cpython-310.pyc\n'}
+[7.821225] (imu_driver) StdoutLine: {'line': b'byte-compiling /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver/__init__.py to __init__.cpython-310.pyc\n'}
+[7.821354] (imu_driver) StdoutLine: {'line': b'running install_data\n'}
+[7.821487] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index\n'}
+[7.821587] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index\n'}
+[7.821673] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages\n'}
+[7.821751] (imu_driver) StdoutLine: {'line': b'copying resource/imu_driver -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/ament_index/resource_index/packages\n'}
+[7.821841] (imu_driver) StdoutLine: {'line': b'copying package.xml -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver\n'}
+[7.821936] (imu_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch\n'}
+[7.821978] (imu_driver) StdoutLine: {'line': b'copying launch/imu_launch.py -> /home/savannah/EECE5554/LAB4/install/imu_driver/share/imu_driver/launch\n'}
+[7.822018] (imu_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.823512] (imu_driver) StdoutLine: {'line': b'Copying ../../build/imu_driver/imu_driver.egg-info to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages/imu_driver-0.0.0-py3.10.egg-info\n'}
+[7.824088] (imu_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[7.845192] (imu_driver) StdoutLine: {'line': b'Installing imu_driver script to /home/savannah/EECE5554/LAB4/install/imu_driver/lib/imu_driver\n'}
+[7.846608] (imu_driver) StdoutLine: {'line': b"writing list of installed files to '/home/savannah/EECE5554/LAB4/build/imu_driver/install.log'\n"}
+[7.847526] (gps_driver) StdoutLine: {'line': b'running egg_info\n'}
+[7.852882] (gps_driver) StdoutLine: {'line': b'creating ../../build/gps_driver/gps_driver.egg-info\n'}
+[7.853082] (gps_driver) StdoutLine: {'line': b'writing ../../build/gps_driver/gps_driver.egg-info/PKG-INFO\n'}
+[7.853169] (gps_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_driver/gps_driver.egg-info/dependency_links.txt\n'}
+[7.853235] (gps_driver) StdoutLine: {'line': b'writing entry points to ../../build/gps_driver/gps_driver.egg-info/entry_points.txt\n'}
+[7.853298] (gps_driver) StdoutLine: {'line': b'writing requirements to ../../build/gps_driver/gps_driver.egg-info/requires.txt\n'}
+[7.853359] (gps_driver) StdoutLine: {'line': b'writing top-level names to ../../build/gps_driver/gps_driver.egg-info/top_level.txt\n'}
+[7.853484] (gps_driver) StdoutLine: {'line': b"writing manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'\n"}
+[7.854938] (gps_driver) StdoutLine: {'line': b"reading manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'\n"}
+[7.855151] (gps_driver) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[7.855195] (gps_driver) StdoutLine: {'line': b"writing manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'\n"}
+[7.855234] (gps_driver) StdoutLine: {'line': b'running build\n'}
+[7.855272] (gps_driver) StdoutLine: {'line': b'running build_py\n'}
+[7.857237] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/gps_driver/build\n'}
+[7.857312] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib\n'}
+[7.857353] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib/gps_driver\n'}
+[7.857392] (gps_driver) StdoutLine: {'line': b'copying gps_driver/gps_driver.py -> /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib/gps_driver\n'}
+[7.857431] (gps_driver) StdoutLine: {'line': b'copying gps_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib/gps_driver\n'}
+[7.857550] (gps_driver) StdoutLine: {'line': b'running install\n'}
+[7.857812] (gps_driver) StdoutLine: {'line': b'running install_lib\n'}
+[7.857886] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver\n'}
+[7.857927] (gps_driver) StdoutLine: {'line': b'copying /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib/gps_driver/gps_driver.py -> /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver\n'}
+[7.857969] (gps_driver) StdoutLine: {'line': b'copying /home/savannah/EECE5554/LAB4/build/gps_driver/build/lib/gps_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver\n'}
+[7.858009] (gps_driver) StdoutLine: {'line': b'byte-compiling /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver/gps_driver.py to gps_driver.cpython-310.pyc\n'}
+[7.862595] (gps_driver) StdoutLine: {'line': b'byte-compiling /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver/__init__.py to __init__.cpython-310.pyc\n'}
+[7.863555] (gps_driver) StdoutLine: {'line': b'running install_data\n'}
+[7.863742] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/gps_driver/share/ament_index\n'}
+[7.864607] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/gps_driver/share/ament_index/resource_index\n'}
+[7.864664] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/gps_driver/share/ament_index/resource_index/packages\n'}
+[7.864704] (gps_driver) StdoutLine: {'line': b'copying resource/gps_driver -> /home/savannah/EECE5554/LAB4/install/gps_driver/share/ament_index/resource_index/packages\n'}
+[7.864745] (gps_driver) StdoutLine: {'line': b'copying package.xml -> /home/savannah/EECE5554/LAB4/install/gps_driver/share/gps_driver\n'}
+[7.864783] (gps_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/gps_driver/share/gps_driver/launch\n'}
+[7.864821] (gps_driver) StdoutLine: {'line': b'copying launch/driver.launch.py -> /home/savannah/EECE5554/LAB4/install/gps_driver/share/gps_driver/launch\n'}
+[7.864869] (gps_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.866933] (gps_driver) StdoutLine: {'line': b'Copying ../../build/gps_driver/gps_driver.egg-info to /home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages/gps_driver-0.0.0-py3.10.egg-info\n'}
+[7.870529] (gps_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[7.877489] (imu_driver) CommandEnded: {'returncode': 0}
+[7.885398] (imu_driver) JobEnded: {'identifier': 'imu_driver', 'rc': 0}
+[7.891081] (gps_driver) StdoutLine: {'line': b'Installing driver script to /home/savannah/EECE5554/LAB4/install/gps_driver/lib/gps_driver\n'}
+[7.891385] (gps_driver) StdoutLine: {'line': b"writing list of installed files to '/home/savannah/EECE5554/LAB4/build/gps_driver/install.log'\n"}
+[7.914313] (-) TimerEvent: {}
+[7.920730] (gps_driver) CommandEnded: {'returncode': 0}
+[7.928325] (gps_driver) JobEnded: {'identifier': 'gps_driver', 'rc': 0}
+[7.928886] (fusion_driver) JobStarted: {'identifier': 'fusion_driver'}
+[8.014470] (-) TimerEvent: {}
+[8.114809] (-) TimerEvent: {}
+[8.215624] (-) TimerEvent: {}
+[8.316935] (-) TimerEvent: {}
+[8.417719] (-) TimerEvent: {}
+[8.518534] (-) TimerEvent: {}
+[8.539589] (fusion_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/fusion_driver', 'build', '--build-base', '/home/savannah/EECE5554/LAB4/build/fusion_driver/build', 'install', '--record', '/home/savannah/EECE5554/LAB4/build/fusion_driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/savannah/EECE5554/LAB4/src/fusion_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'savannah', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/savannah/EECE5554/LAB4/install/imu_msg/lib:/home/savannah/EECE5554/LAB4/install/gps_message/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/savannah', 'OLDPWD': '/home/savannah', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1701', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'savannah', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'savannah', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/savannah/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/savannah-VirtualBox:@/tmp/.ICE-unix/1661,unix/savannah-VirtualBox:/tmp/.ICE-unix/1661', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/115b0915_29a3_46f0_93e7_838b2bbe1923', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FJW132', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/imu_driver:/home/savannah/EECE5554/LAB4/install/gps_driver:/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:f90c821d-3786-4772-96da-b6768894ea90', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/savannah/EECE5554/LAB4/build/fusion_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/savannah/EECE5554/LAB4/build/fusion_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB4/install/imu_msg/local/lib/python3.10/dist-packages:/home/savannah/EECE5554/LAB4/install/gps_message/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/savannah/EECE5554/LAB4/install/imu_msg:/home/savannah/EECE5554/LAB4/install/gps_message'}, 'shell': False}
+[8.618986] (-) TimerEvent: {}
+[8.721682] (-) TimerEvent: {}
+[8.772651] (fusion_driver) StdoutLine: {'line': b'running egg_info\n'}
+[8.773195] (fusion_driver) StdoutLine: {'line': b'creating ../../build/fusion_driver/fusion_driver.egg-info\n'}
+[8.773336] (fusion_driver) StdoutLine: {'line': b'writing ../../build/fusion_driver/fusion_driver.egg-info/PKG-INFO\n'}
+[8.773579] (fusion_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/fusion_driver/fusion_driver.egg-info/dependency_links.txt\n'}
+[8.773694] (fusion_driver) StdoutLine: {'line': b'writing entry points to ../../build/fusion_driver/fusion_driver.egg-info/entry_points.txt\n'}
+[8.773774] (fusion_driver) StdoutLine: {'line': b'writing requirements to ../../build/fusion_driver/fusion_driver.egg-info/requires.txt\n'}
+[8.773817] (fusion_driver) StdoutLine: {'line': b'writing top-level names to ../../build/fusion_driver/fusion_driver.egg-info/top_level.txt\n'}
+[8.773923] (fusion_driver) StdoutLine: {'line': b"writing manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'\n"}
+[8.775292] (fusion_driver) StdoutLine: {'line': b"reading manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'\n"}
+[8.775444] (fusion_driver) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.775840] (fusion_driver) StdoutLine: {'line': b"writing manifest file '../../build/fusion_driver/fusion_driver.egg-info/SOURCES.txt'\n"}
+[8.775992] (fusion_driver) StdoutLine: {'line': b'running build\n'}
+[8.776047] (fusion_driver) StdoutLine: {'line': b'running build_py\n'}
+[8.776169] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build\n'}
+[8.776270] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib\n'}
+[8.776350] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver\n'}
+[8.776404] (fusion_driver) StdoutLine: {'line': b'copying fusion_driver/__init__.py -> /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver\n'}
+[8.776507] (fusion_driver) StdoutLine: {'line': b'running install\n'}
+[8.776762] (fusion_driver) StdoutLine: {'line': b'running install_lib\n'}
+[8.777298] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver\n'}
+[8.777392] (fusion_driver) StdoutLine: {'line': b'copying /home/savannah/EECE5554/LAB4/build/fusion_driver/build/lib/fusion_driver/__init__.py -> /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver\n'}
+[8.777833] (fusion_driver) StdoutLine: {'line': b'byte-compiling /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver/__init__.py to __init__.cpython-310.pyc\n'}
+[8.778066] (fusion_driver) StdoutLine: {'line': b'running install_data\n'}
+[8.778138] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index\n'}
+[8.778201] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index\n'}
+[8.778242] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index/packages\n'}
+[8.778338] (fusion_driver) StdoutLine: {'line': b'copying resource/fusion_driver -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/ament_index/resource_index/packages\n'}
+[8.779018] (fusion_driver) StdoutLine: {'line': b'copying package.xml -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver\n'}
+[8.779064] (fusion_driver) StdoutLine: {'line': b'creating /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver/launch\n'}
+[8.779101] (fusion_driver) StdoutLine: {'line': b'copying launch/fusion_launch.py -> /home/savannah/EECE5554/LAB4/install/fusion_driver/share/fusion_driver/launch\n'}
+[8.779172] (fusion_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.781085] (fusion_driver) StdoutLine: {'line': b'Copying ../../build/fusion_driver/fusion_driver.egg-info to /home/savannah/EECE5554/LAB4/install/fusion_driver/lib/python3.10/site-packages/fusion_driver-0.0.0-py3.10.egg-info\n'}
+[8.781747] (fusion_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[8.802133] (fusion_driver) StdoutLine: {'line': b"writing list of installed files to '/home/savannah/EECE5554/LAB4/build/fusion_driver/install.log'\n"}
+[8.821891] (-) TimerEvent: {}
+[8.824687] (fusion_driver) CommandEnded: {'returncode': 0}
+[8.832992] (fusion_driver) JobEnded: {'identifier': 'fusion_driver', 'rc': 0}
+[8.833649] (-) EventReactorShutdown: {}

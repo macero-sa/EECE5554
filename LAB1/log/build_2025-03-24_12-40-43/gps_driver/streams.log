@@ -1,0 +1,40 @@
+[0.513s] Invoking command in '/home/savannah/EECE5554/LAB1/src/gps_driver': AMENT_PREFIX_PATH=/home/savannah/EECE5554/LAB1/install/gps_message:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB1/install/gps_message LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB1/install/gps_message/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/savannah/EECE5554/LAB1/build/gps_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB1/install/gps_message/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_driver build --build-base /home/savannah/EECE5554/LAB1/build/gps_driver/build install --record /home/savannah/EECE5554/LAB1/build/gps_driver/install.log --single-version-externally-managed install_data
+[0.719s] running egg_info
+[0.720s] creating ../../build/gps_driver/gps_driver.egg-info
+[0.721s] writing ../../build/gps_driver/gps_driver.egg-info/PKG-INFO
+[0.721s] writing dependency_links to ../../build/gps_driver/gps_driver.egg-info/dependency_links.txt
+[0.721s] writing entry points to ../../build/gps_driver/gps_driver.egg-info/entry_points.txt
+[0.721s] writing requirements to ../../build/gps_driver/gps_driver.egg-info/requires.txt
+[0.721s] writing top-level names to ../../build/gps_driver/gps_driver.egg-info/top_level.txt
+[0.722s] writing manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'
+[0.723s] reading manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'
+[0.723s] adding license file 'LICENSE'
+[0.723s] writing manifest file '../../build/gps_driver/gps_driver.egg-info/SOURCES.txt'
+[0.724s] running build
+[0.724s] running build_py
+[0.724s] creating /home/savannah/EECE5554/LAB1/build/gps_driver/build
+[0.724s] creating /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib
+[0.724s] creating /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib/gps_driver
+[0.724s] copying gps_driver/driver.py -> /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib/gps_driver
+[0.724s] copying gps_driver/__init__.py -> /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib/gps_driver
+[0.724s] running install
+[0.725s] running install_lib
+[0.725s] creating /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver
+[0.725s] copying /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib/gps_driver/driver.py -> /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver
+[0.726s] copying /home/savannah/EECE5554/LAB1/build/gps_driver/build/lib/gps_driver/__init__.py -> /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver
+[0.726s] byte-compiling /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver/driver.py to driver.cpython-310.pyc
+[0.729s] byte-compiling /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver/__init__.py to __init__.cpython-310.pyc
+[0.729s] running install_data
+[0.729s] creating /home/savannah/EECE5554/LAB1/install/gps_driver/share/ament_index
+[0.729s] creating /home/savannah/EECE5554/LAB1/install/gps_driver/share/ament_index/resource_index
+[0.729s] creating /home/savannah/EECE5554/LAB1/install/gps_driver/share/ament_index/resource_index/packages
+[0.729s] copying resource/gps_driver -> /home/savannah/EECE5554/LAB1/install/gps_driver/share/ament_index/resource_index/packages
+[0.729s] copying package.xml -> /home/savannah/EECE5554/LAB1/install/gps_driver/share/gps_driver
+[0.729s] creating /home/savannah/EECE5554/LAB1/install/gps_driver/share/gps_driver/launch
+[0.729s] copying launch/driver.launch.py -> /home/savannah/EECE5554/LAB1/install/gps_driver/share/gps_driver/launch
+[0.729s] running install_egg_info
+[0.730s] Copying ../../build/gps_driver/gps_driver.egg-info to /home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages/gps_driver-0.0.0-py3.10.egg-info
+[0.730s] running install_scripts
+[0.748s] Installing driver script to /home/savannah/EECE5554/LAB1/install/gps_driver/lib/gps_driver
+[0.749s] writing list of installed files to '/home/savannah/EECE5554/LAB1/build/gps_driver/install.log'
+[0.777s] Invoked command in '/home/savannah/EECE5554/LAB1/src/gps_driver' returned '0': AMENT_PREFIX_PATH=/home/savannah/EECE5554/LAB1/install/gps_message:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/savannah/EECE5554/LAB1/install/gps_message LD_LIBRARY_PATH=/home/savannah/EECE5554/LAB1/install/gps_message/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/savannah/EECE5554/LAB1/build/gps_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/savannah/EECE5554/LAB1/install/gps_driver/lib/python3.10/site-packages:/home/savannah/EECE5554/LAB1/install/gps_message/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_driver build --build-base /home/savannah/EECE5554/LAB1/build/gps_driver/build install --record /home/savannah/EECE5554/LAB1/build/gps_driver/install.log --single-version-externally-managed install_data

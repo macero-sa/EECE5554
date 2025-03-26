@@ -29,31 +29,22 @@ class Driver(Node):
 
     
     def timer_callback(self):
-        try:
             line = self.ser.readline().decode('utf-8')
             if line.startswith('$GPGGA'):  # Only log GPGGA messages
                 # for i, (line) in enumerate(line):
                 #     i+=1
                 #     if i < 3:
                 #         print(f'Raw GPS data: {line}')
-
+                # self.get_logger().info(f'Raw GPS LINE: {line}')
                 parsed_data = self.parse_str(line)
                 if parsed_data:
                     lat, lon, hdop, alt, header, utc_time = parsed_data
                     s, ms = utc_time.split('.')
-                    '''nanosec SHOULD be 0 when testing with emulator. All millisec readings are 000'''
                     # sec = convert(hours) + convert(minutes) + convert(seconds)
                     sec  = int(s[:2]) * 3600 + int(s[2:4]) * 60 + int(s[4:6])
                     # nanosec = convert(milliseconds)
-                    millisec = int(int(ms) * 1e9)
+                    millisec = int(int(ms) * 1e6)
                     
-                    '''   DOESN'T WORK: overflows nanosec if you store it as sec + millisec                 
-                    # sec = convert(hours) + convert(minutes)
-                    sec  = int(s[:2]) * 3600 + int(s[2:4])
-                    # nanosec = convert(seconds) + convert(milliseconds)
-                    nanosec = int((int(s[4:6]) + int(ms) * 1000) * 1e9)'''
- 
-
                     zone, letter = self.zone_letter(lat, lon)
                     utm_easting, utm_northing = self.latlon_to_utm(lat, lon, zone)
                     gps_message = GpsMsg()
@@ -72,17 +63,16 @@ class Driver(Node):
                     gps_message.utc_time = utc_time
                     self.publisher.publish(gps_message)
                     self.get_logger().info(f'Publishing: {gps_message}')
-
-                else:
-                    self.get_logger().warn('No data received from GPS')
-        except Exception as e:
-            self.get_logger().error(f'Error reading from serial port: {e}')
             
 
 
     def parse_str(self, line):
         if line.startswith('$GPGGA'):
             fields = line.strip().split(',')
+            if fields[2] == '' or fields[4] == '':
+                self.get_logger().info(f'Bad Data String: {line}')
+                return None
+            
             # raw field index: log header 0, utc time 1, lat 2, lat dir3, lon 4, lon dir 5, hdop8, alt9
             raw_header = fields[0]
             utc_time = fields[1]  # Keep as string for time calculations

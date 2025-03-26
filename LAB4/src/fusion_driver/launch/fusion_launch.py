@@ -21,7 +21,8 @@ def generate_launch_description():
             executable='gps_driver',
             name='gps_driver',
             parameters=[{
-                'port': LaunchConfiguration('gps_port')
+                'port': LaunchConfiguration('gps_port'),
+                # 'baudrate': 4800
             }],
             output='screen'
         ),

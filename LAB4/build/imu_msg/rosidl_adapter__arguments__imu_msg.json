@@ -1,6 +1,0 @@
-{
-  "package_name": "imu_msg",
-  "non_idl_tuples": [
-    "/home/savannah/EECE5554/LAB4/src/imu_msg:msg/ImuMsg.msg"
-  ]
-}

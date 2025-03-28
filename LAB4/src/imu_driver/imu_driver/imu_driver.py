@@ -18,7 +18,7 @@ sudo dmesg | tail -20
 
 New terminal window, launch driver:
 
-ros2 launch imu_driver imu_launch.py port:= <port>
+ros2 launch imu_driver imu_launch.py port:='<port>'
 
 New terminal window: 
 

@@ -15,8 +15,6 @@ setup(
     ],
     install_requires=['setuptools',
                       'pyserial',
-                      'rclpy',
-                      'math',
                       'numpy'],
     zip_safe=True,
     maintainer='savannah',

@@ -16,7 +16,6 @@ setup(
     ],
     install_requires=['setuptools',
                      'pyproj',
-                     'rclpy',
                      'pyserial',
                      'utm',
                      ],

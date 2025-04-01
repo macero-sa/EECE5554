@@ -1,3 +1,4 @@
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Header
@@ -37,7 +38,7 @@ class Driver(Node):
             raise
 
         self.publisher = self.create_publisher(GpsMsg, '/gps', 10)
-        self.timer = self.create_timer(1.0 / 2.0, self.timer_callback)
+        self.timer = self.create_timer(1.0 / 1.0, self.timer_callback)
 
 
     

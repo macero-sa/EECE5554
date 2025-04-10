@@ -1,0 +1,12 @@
+.venv/
+
+__pycache__/
+*.pyc
+
+build/
+install/
+log/
+
+*.db3
+*.bag
+data/*/
